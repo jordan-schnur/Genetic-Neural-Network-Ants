@@ -1,9 +1,7 @@
 import * as PIXI from "pixi.js";
-import ant from './images/sample.png';
+import ant from './images/ant.png';
 
 let app = new PIXI.Application({ width: 641, height: 360, backgroundColor: 0xFFFFFF });
-
-console.log("Heyo")
 
 let sprite = PIXI.Sprite.from(ant);
 
