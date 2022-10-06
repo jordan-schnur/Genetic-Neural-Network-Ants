@@ -2,6 +2,27 @@
 # yarn lockfile v1
 
 
+"@babel/runtime@^7.11.2", "@babel/runtime@^7.12.0":
+  "integrity" "sha512-eR8Lo9hnDS7tqkO7NsV+mKvCmv5boaXFSZ70DnfhcgiEne8hv9oCEd36Klw74EtizEqLsy4YnW8UWwpBVolHZA=="
+  "resolved" "https://registry.npmjs.org/@babel/runtime/-/runtime-7.19.0.tgz"
+  "version" "7.19.0"
+  dependencies:
+    "regenerator-runtime" "^0.13.4"
+
+"@math.gl/core@^3.6.3":
+  "integrity" "sha512-jBABmDkj5uuuE0dTDmwwss7Cup5ZwQ6Qb7h1pgvtkEutTrhkcv8SuItQNXmF45494yIHeoGue08NlyeY6wxq2A=="
+  "resolved" "https://registry.npmjs.org/@math.gl/core/-/core-3.6.3.tgz"
+  "version" "3.6.3"
+  dependencies:
+    "@babel/runtime" "^7.12.0"
+    "@math.gl/types" "3.6.3"
+    "gl-matrix" "^3.4.0"
+
+"@math.gl/types@3.6.3":
+  "integrity" "sha512-3uWLVXHY3jQxsXCr/UCNPSc2BG0hNUljhmOBt9l+lNFDp7zHgm0cK2Tw4kj2XfkJy4TgwZTBGwRDQgWEbLbdTA=="
+  "resolved" "https://registry.npmjs.org/@math.gl/types/-/types-3.6.3.tgz"
+  "version" "3.6.3"
+
 "@pixi/accessibility@6.5.4":
   "integrity" "sha512-ZlAzU2V4Nxu+2UHPqgncUgUJlZmzqYz/FugCmgCFpbHGz8uyLEfOL1RaS3rbHzuSl4mLlIqjPldKrD+TY6BPhg=="
   "resolved" "https://registry.npmjs.org/@pixi/accessibility/-/accessibility-6.5.4.tgz"
@@ -22,6 +43,11 @@
   "resolved" "https://registry.npmjs.org/@pixi/constants/-/constants-6.5.4.tgz"
   "version" "6.5.4"
 
+"@pixi/constants@6.5.5":
+  "integrity" "sha512-tuiN6aeMuQv77UHzGNeJiAUiOrt22dybZYrXAVLOF7mDG+zxT96r7R43DvqrWG3GuNh/VCKE5hQLGQybR21nBA=="
+  "resolved" "https://registry.npmjs.org/@pixi/constants/-/constants-6.5.5.tgz"
+  "version" "6.5.5"
+
 "@pixi/core@6.5.4":
   "integrity" "sha512-+85CHrBI37n5wXQ6rtYx9gaEVkj+m+z54GKHtiz1xLi0kjuyI728vTb3+wKVDYaA5+Q/FLQ5LAplWsllQNJ2Rw=="
   "resolved" "https://registry.npmjs.org/@pixi/core/-/core-6.5.4.tgz"
@@ -33,6 +59,16 @@
   "integrity" "sha512-2aEK/BfCq7VE8qlYnI2i3v1HDhLM0jH2xEKsP4GFUCGszI834CnHQDfn1XySfynOYVlytM4J8D0wNG4vWmrfnQ=="
   "resolved" "https://registry.npmjs.org/@pixi/display/-/display-6.5.4.tgz"
   "version" "6.5.4"
+
+"@pixi/display@6.5.5":
+  "integrity" "sha512-+WnIR9+vrMc6fgdfOPvmsUIggwdAZvjZ0eX3uEEyS6mjFkZCcC8b0fjfpBaTq8dtWWs+sS7ZZqew9TzAlA9o1w=="
+  "resolved" "https://registry.npmjs.org/@pixi/display/-/display-6.5.5.tgz"
+  "version" "6.5.5"
+
+"@pixi/events@^6.5.5":
+  "integrity" "sha512-hurlzhWHnVYr/ISdGH8wOtVRJuhdCEvCJOq6BWvo5RSkVwcEiDEL+unjgUK0DNTHtSHsq0vyQru2zASzfgqx0Q=="
+  "resolved" "https://registry.npmjs.org/@pixi/events/-/events-6.5.5.tgz"
+  "version" "6.5.5"
 
 "@pixi/extensions@6.5.4":
   "integrity" "sha512-I9XLxan/CvYfJPzCoZJrIEWtG9KGGMHs4y9SpVggYNcU6IOtf3N6xA0LvG1nxtbE1+CNRtw+9DfZ0dypytU1XQ=="
@@ -94,6 +130,11 @@
   "resolved" "https://registry.npmjs.org/@pixi/math/-/math-6.5.4.tgz"
   "version" "6.5.4"
 
+"@pixi/math@6.5.5":
+  "integrity" "sha512-3Y8mfcPjmhIBlcUPTlQXuBBl+cyKWHp2mdXtJg3+E72poO0wTnW175oi38alxSgfKE4jZIDtoUaUoAAuJxmMoA=="
+  "resolved" "https://registry.npmjs.org/@pixi/math/-/math-6.5.5.tgz"
+  "version" "6.5.5"
+
 "@pixi/mesh-extras@6.5.4":
   "integrity" "sha512-uowBlNiku213yy/jHDYrRr2Feq8BPqUhTbPHsXV+Nub87cdyopzfKVjiPJjUrtvmk8xFbJU/wFhoZbAgP51otA=="
   "resolved" "https://registry.npmjs.org/@pixi/mesh-extras/-/mesh-extras-6.5.4.tgz"
@@ -147,6 +188,11 @@
   "resolved" "https://registry.npmjs.org/@pixi/settings/-/settings-6.5.4.tgz"
   "version" "6.5.4"
 
+"@pixi/settings@6.5.5":
+  "integrity" "sha512-U6xeE9Ri10Rm0Ttjhxc0vc2Qzu2NhB9j/YjvO5NwtW6Adx1SsGz71Pgmebt/FoR4OKU4rtDnRKZOfem7LCFoCA=="
+  "resolved" "https://registry.npmjs.org/@pixi/settings/-/settings-6.5.5.tgz"
+  "version" "6.5.5"
+
 "@pixi/sprite-animated@6.5.4":
   "integrity" "sha512-vqUuiyIExT8pU2PRCtpGrC4GwAkl83P+5yNnX4vCFf409LsV4zfuq5/nCLPlM75t4kEER8lim+QxfqoMQR6VOQ=="
   "resolved" "https://registry.npmjs.org/@pixi/sprite-animated/-/sprite-animated-6.5.4.tgz"
@@ -186,6 +232,16 @@
   "integrity" "sha512-jdnS3aoEhAYoNF2P4njSFPwVc+/4X0F3/5vnNtqCUeDJcz6erNRzO6OEiSDPQMTAt/q5kKpxvtCKGaQmkwlhVA=="
   "resolved" "https://registry.npmjs.org/@pixi/utils/-/utils-6.5.4.tgz"
   "version" "6.5.4"
+  dependencies:
+    "@types/earcut" "^2.1.0"
+    "earcut" "^2.2.4"
+    "eventemitter3" "^3.1.0"
+    "url" "^0.11.0"
+
+"@pixi/utils@6.5.5":
+  "integrity" "sha512-QtcRR+/Y/F49rQ1vVLsc6dMoLLyLTIJxHDSHxYvlGpQWZG+mRvaWYPZZwFgjdCKzzft1RiwkXI2vL4Zxqfg9CQ=="
+  "resolved" "https://registry.npmjs.org/@pixi/utils/-/utils-6.5.5.tgz"
+  "version" "6.5.5"
   dependencies:
     "@types/earcut" "^2.1.0"
     "earcut" "^2.2.4"
@@ -257,12 +313,24 @@
   "resolved" "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
   "version" "1.1.1"
 
+"gl-matrix@^3.4.0":
+  "integrity" "sha512-wcCp8vu8FT22BnvKVPjXa/ICBWRq/zjFfdofZy1WSpQZpphblv12/bOQLBC1rMM7SGOFS9ltVmKOHil5+Ml7gA=="
+  "resolved" "https://registry.npmjs.org/gl-matrix/-/gl-matrix-3.4.3.tgz"
+  "version" "3.4.3"
+
 "has@^1.0.3":
   "integrity" "sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw=="
   "resolved" "https://registry.npmjs.org/has/-/has-1.0.3.tgz"
   "version" "1.0.3"
   dependencies:
     "function-bind" "^1.1.1"
+
+"hypergiant@^3.1.0":
+  "integrity" "sha512-ddDjI/p+peymGseSuiWbyyiPhmCmuAyWzrZHefR2zBBE0BX2g/a0+De7zkS0qq5QUmpIAkQGXpoB71wKNinBvg=="
+  "resolved" "https://registry.npmjs.org/hypergiant/-/hypergiant-3.1.0.tgz"
+  "version" "3.1.0"
+  dependencies:
+    "@babel/runtime" "^7.11.2"
 
 "is-core-module@^2.9.0":
   "integrity" "sha512-Erxj2n/LDAZ7H8WNJXd9tw38GYM3dv8rk8Zcs+jJuxYTW7sozH+SS8NtrSjVL1/vpLvWi1hxy96IzjJ3EHTJJg=="
@@ -290,6 +358,13 @@
   "integrity" "sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ=="
   "resolved" "https://registry.npmjs.org/picocolors/-/picocolors-1.0.0.tgz"
   "version" "1.0.0"
+
+"pixi-game-camera@^1.0.2":
+  "integrity" "sha512-3uaR5dVV7CzMXM8zuS5NSl7cK74jVj7aHhwUuoxZDSmmZhwQGIJLSXwHdTKMzbXkMbGboplzhtaaLSldfKfjNQ=="
+  "resolved" "https://registry.npmjs.org/pixi-game-camera/-/pixi-game-camera-1.0.2.tgz"
+  "version" "1.0.2"
+  dependencies:
+    "hypergiant" "^3.1.0"
 
 "pixi.js@*", "pixi.js@^6.5.4":
   "integrity" "sha512-TbWqFN6M1ov8a14BxWn/odYeef4g/oVx4ODSm5CWZXIxrLg7d8wnEppeAA5u9hCnX/UNdtugKFLEXWDaOOg/gA=="
@@ -356,6 +431,11 @@
   "integrity" "sha512-X/xY82scca2tau62i9mDyU9K+I+djTMUsvwf7xnUX5GLvVzgJybOJf4Y6o9Zx3oJK/LSXg5tTZBjwzqVPaPO2g=="
   "resolved" "https://registry.npmjs.org/querystring/-/querystring-0.2.0.tgz"
   "version" "0.2.0"
+
+"regenerator-runtime@^0.13.4":
+  "integrity" "sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA=="
+  "resolved" "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.9.tgz"
+  "version" "0.13.9"
 
 "resolve@^1.22.1":
   "integrity" "sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw=="
