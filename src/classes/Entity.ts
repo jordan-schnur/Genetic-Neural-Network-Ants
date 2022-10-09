@@ -26,7 +26,7 @@ export default class Entity {
 		Entity.idCounter++;
 	}
 
-	public render() {
+	public update() {
 		this._container.x = this._position.x;
 		this._container.y = this._position.y;
 		this._container.rotation = this._rotation;

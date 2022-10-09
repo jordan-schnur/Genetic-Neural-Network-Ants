@@ -4,6 +4,7 @@ import eggsSrc from './images/eggs.png';
 import Ant from "./classes/Ant";
 import { Vector2 } from "@math.gl/core";
 import Egg from "./classes/Egg";
+import UICanvas from "./ui/UICanvas";
 
 const width = window.innerWidth;
 const height = window.innerHeight;
@@ -16,7 +17,7 @@ function getDistanceBetweenPoints(p1: Vector2, p2: Vector2) {
 	return Math.sqrt(Math.pow(p2.x - p1.x, 2) - Math.pow(p2.y - p1.y, 2));
 }
 
-let app = new PIXI.Application({ width: width, height: height, backgroundColor: 0xFFFFFF });
+let app = new PIXI.Application({ backgroundColor: 0xFFFFFF, resizeTo: window });
 
 let sprite = PIXI.Sprite.from(antSrc);
 sprite.zIndex = 2;
@@ -37,7 +38,7 @@ for (let i = 0; i < eggNum; i++) {
 	let eggSprite = PIXI.Sprite.from(eggsSrc);
 	eggSprite.scale = { x: 0.25, y: 0.25 };
 	let egg = new Egg(eggSprite, pos);
-	egg.render();
+	egg.update();
 	eggs.push(egg);
 	app.stage.addChild(egg.container);
 }
@@ -47,7 +48,7 @@ for (let i = 0; i < antNum; i++) {
 	let antSprite = PIXI.Sprite.from(antSrc);
 	antSprite.scale = { x: 0.25, y: 0.25 };
 	let ant = new Ant(antSprite, pos);
-	ant.render();
+	ant.update();
 	ants.push(ant);
 	app.stage.addChild(ant.container);
 }
@@ -83,13 +84,27 @@ document.addEventListener("keydown", (e) => {
 		paused = !paused;
 		richText.visible = paused;
 	}
-	console.log(e);
-})
+});
+
+let ui = new UICanvas(app);
+
+app.stage.addChild(ui);
+// let window1 = new Window("Hello, There!", false, 200, 200);
+//
+// window1.on(EventType.Close, (e, a, b) => {
+// 	console.log("Closed");
+// 	console.log(e, a, b);
+// })
+//
+// app.stage.addChild(window1.container);
+
+// let textwindow = new TextWindow("Hello, World!");
+
+// app.stage.addChild(textwindow.container);
 
 let elapsed = 0.0;
 app.ticker.add((delta) => {
 	elapsed += delta;
-	console.log("Frame elapsed: " + elapsed);
 	ants.forEach((ant) => {
 
 		let closestEggDistance = 999999999;
@@ -99,11 +114,11 @@ app.ticker.add((delta) => {
 				closestEgg = egg;
 			}
 		}
-		
+
 		// p2 - p1
 		ant.closestEggVector = new Vector2(egg.position.x - ant.position.x, egg.position.y - ant.position.y);
 
-		ant.render();
+		ant.update();
 	});
 });
 
